@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // Database Connection URL
-const uri = "mongodb+srv://2025353khoy_db_user:j4hOeVdkycgMwobm@cluster0.j1trcer.mongodb.net/?appName=Cluster0";
+const uri = "mongodb+srv://Database:GZEFU2vIxw48WRXP@cluster0.j1trcer.mongodb.net/?appName=Cluster0";
 //OR
 //const uri = "mongodb://user1:<your password>@ac-irevfzj-shard-00-00.jh094ab.mongodb.net:27017,ac-irevfzj-shard-00-01.jh094ab.mongodb.net:27017,ac-irevfzj-shard-00-02.jh094ab.mongodb.net:27017/<your database name>?ssl=true&replicaSet=atlas-u04hq6-shard-0&authSource=admin&appName=MyCluster1
 
