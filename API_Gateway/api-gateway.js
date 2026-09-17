@@ -50,7 +50,7 @@ app.use('/user',authToken, authRole('user'), (req, res) => {
 //REDIRECT TO THE ADMIN MICROSERVICE
 app.use('/admin', authToken, authRole('admin'),(req, res) => {
     console.log("INSIDE API GATEWAY admin ROUTE")
-    proxy.web(req, res, { target: '100.48.52.150:5001' });
+    proxy.web(req, res, { target: 'http://100.48.52.150:5001' });
 })
 
 //REDIRECT TO THE LOGIN(Authentication) MICROSERVICE
