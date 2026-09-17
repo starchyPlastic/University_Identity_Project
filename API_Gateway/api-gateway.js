@@ -44,13 +44,13 @@ app.use('/Registration', (req, res) => {
 //REDIRECT TO THE USER MICROSERVICE
 app.use('/user',authToken, authRole('user'), (req, res) => {
     console.log("INSIDE API GATEWAY User ROUTE")
-    proxy.web(req, res, { target: 'http://localhost:5000' });
+    proxy.web(req, res, { target: 'http://98.92.133.230:5000' });
 })
 
 //REDIRECT TO THE ADMIN MICROSERVICE
 app.use('/admin', authToken, authRole('admin'),(req, res) => {
     console.log("INSIDE API GATEWAY admin ROUTE")
-    proxy.web(req, res, { target: 'http://localhost:5001' });
+    proxy.web(req, res, { target: '100.48.52.150:5001' });
 })
 
 //REDIRECT TO THE LOGIN(Authentication) MICROSERVICE
