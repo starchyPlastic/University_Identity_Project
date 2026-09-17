@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken')
 const dbconnect = require('./dbconnect.js');
+const jwt = require('jsonwebtoken')
 const PersonModel = require('./person_schema.js');
 require('dotenv').config();
 
