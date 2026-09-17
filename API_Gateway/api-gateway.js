@@ -37,7 +37,7 @@ function authRole(role) {
     }
 }
 //REDIRECT TO THE REGISTRATION MICROSERVICE
-app.use('/Registration',authToken, authRole('user'), (req, res) => {
+app.use('/Registration', (req, res) => {
     console.log("INSIDE API GATEWAY Registeration ROUTE")
     proxy.web(req, res, { target: 'http://localhost:5003' });
 })
